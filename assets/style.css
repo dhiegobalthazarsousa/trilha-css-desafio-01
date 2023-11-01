@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@70000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 *{
     margin: 0;
@@ -32,11 +34,25 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 
+h2 {
+    font-size: 32px;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    color: black;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 header{
     color: white;
     width: 100vw;
     padding: 60px 0;
-    background: url("/assets/images/banner.png"), radial-gradient(rgb(14, 33, 48) 50%, black);
+    background: url("/assets/images/banner.png"), linear-gradient(rgb(14, 33, 48), black);
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%) 1;
@@ -82,4 +98,56 @@ header p{
     padding: 15px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.module{
+    background-color: rgb(45,45,45);
+    background-clip: initial;
+    background-origin: border-box;
+    border: 2px double white;
+    border-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%) 1 content-box;
+    border-radius: 2em;
+    box-shadow: inset 2px 2px 2px black;
+    font-weight: 300;
+    margin: 3em;
+    padding: 10px 60px;
+    text-align: center;
+    -webkit-background-origin: border-box;
+    -webkit-background-clip: initial;
+}
+
+#course-content{
+    padding: 6em 0 4em 0;
+    color: white;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%) 1;
+}
+
+#course-content p{
+    margin: 2em 0;
+    font-weight: 300;
+    width: 60%;
+}
+
+#transform-world{
+    text-transform: lowercase;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+#transform-world>p{
+    text-align: left;
+    text-shadow: 2px 2px #33A8DB;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 2em;
+    line-height: 1.5;
+    width: 12em;
 }
